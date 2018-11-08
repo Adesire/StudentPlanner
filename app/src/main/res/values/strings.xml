@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Student Planner</string>
+    <string name="secondActivity">TIME TABLE</string>
+    <string name="title_activity_monday">Monday</string>
+    <string name="add_course">Add Course</string>
+    <string name="add">ADD</string>
+    <string name="save">SAVE</string>
+    <string name="monday">MONDAY</string>
+    <string name="tuesday">TUESDAY</string>
+    <string name="wednesday">WEDNESDAY</string>
+    <string name="thursday">THURSDAY</string>
+    <string name="friday">FRIDAY</string>
+    <string name="edit_courses">Edit Courses</string>
+    <string name="reset_timetable">Reset timetable</string>
+    <string name="time_picker">timePicker</string>
+    <string name="time">TIME :</string>
+    <string name="pick_a_time">Pick a time</string>
+    <string name="course_title">COURSE TITLE :</string>
+    <string name="from">FROM</string>
+    <string name="to">TO</string>
+    <string name="from_time">00:00</string>
+    <string name="to_time">00:00</string>
+    <string name="to_seperator">To</string>
+    <string name="turn_off_alarm">Alarm On</string>
+    <string name="turn_on_alarm">Alarm Off</string>
+    <string name="short_note">Notes</string>
+    <string name="short_notes_to_remember_stuff">short notes to remember stuff</string>
+    <string name="clear_all">CLEAR ALL</string>
+    <string name="title_activity_tuesday">Tuesday</string>
+    <string name="title_activity_wednesday">Wednesday</string>
+    <string name="title_activity_thursday">Thursday</string>
+    <string name="title_activity_friday">Friday</string>
+    <string name="time_table_head">TIME-TABLE</string>
+    <string name="begin">BEGIN</string>
+    <string name="the_student_planner">THE STUDENT PLANNER</string>
+</resources>

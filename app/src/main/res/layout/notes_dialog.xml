@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="82dp"
+        android:ems="10"
+        android:hint="@string/short_notes_to_remember_stuff"
+        android:inputType="textMultiLine"
+        android:singleLine="false" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/short_note"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/saveNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notes"
+        android:layout_margin="30dp"
+        android:text="@string/save" />
+
+    <Button
+        android:id="@+id/timeNotes"
+        android:layout_width="112dp"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView"
+        android:text="@string/pick_a_time"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/clearNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saveNotes"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="@string/clear_all" />
+</RelativeLayout>

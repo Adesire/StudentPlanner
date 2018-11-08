@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Friday"
+    tools:showIn="@layout/activity_friday">
+
+    <Spinner
+        android:id="@+id/course_spinner"
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/couse_title"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_toRightOf="@+id/couse_title"
+        android:gravity="center"
+        android:layout_toEndOf="@+id/couse_title" />
+
+    <TextView
+        android:id="@+id/couse_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="10dp"
+        android:text="@string/course_title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:fontFamily="serif-monospace" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:text="@string/time"
+        android:paddingTop="2dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/couse_title"/>
+
+    <Button
+        android:id="@+id/fromBtn"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/time"
+        android:onClick="showFromTimePickerDialog"
+        android:text="@string/from"
+        android:textSize="14sp"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/saveTableBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/course_spinner"
+        android:layout_below="@+id/course_spinner"
+        android:text="@string/save"
+        android:layout_alignRight="@+id/course_spinner"
+        android:onClick="saveToTable"/>
+
+    <ListView
+        android:id="@+id/timeTableList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tableHead" />
+
+    <Button
+        android:id="@+id/toBtn"
+        android:layout_width="47dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time"
+        android:onClick="showToTimePickerDialog"
+        android:text="@string/to"
+        android:layout_toRightOf="@+id/fromBtn"
+        android:padding="10dp"
+        android:layout_toEndOf="@+id/fromBtn" />
+
+    <TextView
+        android:id="@+id/fromTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/time"
+        android:layout_below="@+id/couse_title"
+        android:layout_toEndOf="@+id/time"
+        android:gravity="center"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:text="@string/from_time"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:layout_toRightOf="@+id/time" />
+
+    <TextView
+        android:id="@+id/to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/time"
+        android:layout_toEndOf="@+id/fromTxt"
+        android:gravity="center"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:layout_below="@+id/couse_title"
+        android:text="@string/to_seperator"
+        android:layout_toRightOf="@+id/fromTxt" />
+
+    <TextView
+        android:id="@+id/toTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/time"
+        android:layout_below="@+id/couse_title"
+        android:layout_toEndOf="@+id/to"
+        android:gravity="center"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:text="@string/to_time"
+        android:textStyle="italic"
+        android:layout_toRightOf="@+id/to" />
+
+    <TextView
+        android:id="@+id/tableHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fromBtn"
+        android:gravity="center"
+        android:text="@string/time_table_head"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:fontFamily="serif-monospace" />
+
+</RelativeLayout>
